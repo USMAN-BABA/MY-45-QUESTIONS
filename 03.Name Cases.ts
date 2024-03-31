@@ -4,4 +4,4 @@ console.log(myName.toLowerCase());
 
 console.log(myName.toUpperCase());
 
-console.log(myName.charAt(0).toUpperCase() + myName.slice(1).toLowerCase());
+console.log(myName.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" "));
